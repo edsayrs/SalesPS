@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+]>
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="427px" height="165px" viewBox="0 0 427 165" overflow="visible" enable-background="new 0 0 427 165"
+	 xml:space="preserve">
+<defs>
+</defs>
+<rect display="none" fill="#D9EDF4" width="427.098" height="165.391"/>
+<path fill="none" stroke="#1B3764" stroke-width="4" stroke-miterlimit="10" d="M97.615,52.417V38.833
+	c0-1.951-1.434-3.533-3.202-3.533H36.25c-1.769,0-3.201,1.582-3.201,3.533V79.85c0,1.951,1.433,3.531,3.201,3.531
+	c0,0,9.99-0.135,10.524,0.42c1.783,1.852-2.432,8.953-6.7,11.701c-4.67,3.008,15.984,3.127,19.833-11.727
+	c0.06-0.23,0.247-0.293,5.425-0.35"/>
+<path fill="none" stroke="#F15A2C" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" d="M102.418,97.424
+	c-0.148-0.557-28.909-0.318-28.909-0.318c-1.48,0-2.682-1.275-2.682-2.855V61.116c0-1.577,1.201-2.854,2.682-2.854h48.73
+	c1.483,0,2.682,1.277,2.682,2.854v33.136c0,1.578-1.201,2.855-2.682,2.855c0,0-8.37-0.109-8.817,0.34
+	c-1.496,1.498,2.036,7.232,5.615,9.451C122.949,109.326,105.645,109.424,102.418,97.424z"/>
+<text transform="matrix(1 0 0 1 138.353 83.0347)" fill="#1B3764" font-family="'Antipasto'" font-size="72">SalesPS</text>
+<text transform="matrix(1 0 0 1 141.6187 108.7026)" fill="#36BBD6" font-family="'Duepuntozero'" font-size="30">create opportunity</text>
+</svg>
