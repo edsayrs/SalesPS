@@ -1,0 +1,269 @@
+<!doctype HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sales PS</title>
+
+<!-- bootstrap-->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
+	<script type="text/javascript"> $(document).ready(function(){
+	$('.carousel').carousel({ interval:4000, cycle:true})
+	});
+	</script>
+	
+<!--google maps-->
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script>
+      function initialize() {
+        var map_canvas = document.getElementById('map_canvas');
+        var map_options = {
+          center: new google.maps.LatLng(40.017936,-105.28175),
+          zoom:15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(map_canvas, map_options);
+    var i=new google.maps.Marker({
+        position:new google.maps.LatLng(40.017936,-105.28175),
+        map:map // <------------------ needs to be a google.maps.Map object
+        
+        })
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+<!-- typekit-->
+<script type="text/javascript" src="//use.typekit.net/aqt1zwa.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<!--font awesome-->
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+<!--my CSS-->
+<link rel="stylesheet" href="css/SalesPSStyle.css" type="text/css">
+
+</head>
+
+
+<body>
+
+	<header class="row-fluid">
+	
+		<!-- !nav section-->	
+		<nav class="navbar">
+			<div class="navbar-inner">
+			<!--codein a tags below is used to dislay the icon that shows that there is more to show in the nav bar, responsive in smaller windows-->
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+				<a class="brand" href="index.html"><img src="img/SalesPSLogo(cs5).svg" alt="Sales PS logo"></a>	
+					<ul class="nav nav-collapse collapse"><!--nav-collapse and collapse triggers built in javaScript for responsive nav bar-->
+						<li class="active"><a href="index.html">Home</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Services
+							</a>
+							<ul class="dropdown-menu">								
+								<li><a href="campaign-development.html">Campaign Development</a></li>
+								<li><a href="lead-generation.html">Lead Generation</a></li>
+								<li><a href="appointment-setting.html">Appointment Setting</a></li>
+								<li><a href="salesforce.html">Salesforce.com</a></li>
+
+
+							</ul>
+						</li><!--end services dropdown-->
+							
+
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							About Us
+							</a>
+							<ul class="dropdown-menu">								
+								<li><a href="methodology.html">Methodology</a></li>
+								<li><a href="meet-the-team.html">Meet The Team</a></li>
+								<li><a href="contact.html">Contact Us</a></li>
+<!-- 								<li><a href="careers.html">Careers</a></li> -->
+
+
+							</ul>
+						</li><!--end about us dropdown-->
+
+						
+						<li><a href="http://www.salesps.tumblr.com">Blog</a></li>
+					</ul><!--closes nav-bar collapse--> 			
+				
+			</div><!--end navbar-inner div-->
+		</nav>
+	</header>
+
+	
+	<div id="carousel-background">
+	<section class="carousel slide" id="showcase">
+			<h1 class="hidden">slider section</h1>
+	<div class="carousel-inner">
+		<div class="item active">
+			<h1 class="hidden">who we are</h1>
+			<img src="img/slider-1b.png" alt="who we are">
+					<div class="slider-caption">
+					<h1>Who We Are</h1>
+					<p>The key to driving higher and more predictable sales revenue is having a scalable, repeatable sales process.</p>
+
+<p>Whether it is an issue with sales process, sales technology, or sales people, SalesPS can help isolate the source of the problem, and help you own the solution.</p>
+<div class="centered">
+	<a class="btn btn-primary" href="methodology.html">Learn More</a>
+</div>
+
+					
+				</div><!--close carousel caption-->
+			</div><!--close item active-->
+		<div class="item">
+				<h1 class="hidden">Building Sales Pipelines</h1>
+					<img src="img/slider-2.jpg" alt="building sales pipelines">
+					<div class="slider-caption">
+					<h1>Building Sales Pipelines</h1>
+					<p>SalesPS has created a full-circle sales process that encompasses all outbound action from front-end lead generation through back-end lead nurturing.</p>
+
+<p>Learn more about how our process enables you to squeeze every drop out of your potential target market.</p>
+<div class="centered">
+	<a class="btn btn-primary" href="lead-generation.html">Learn More</a>
+</div>
+
+				</div><!--close carousel caption2-->
+			</div><!--close item2-->
+			<div class="item">
+				<h1 class="hidden">Blueprinting Solutions</h1>
+					<img src="img/slider-3.jpg" alt="blueprinting solutions">
+					<div class="slider-caption">
+						<h1>Blueprinting Solutions</h1>
+						<p>SalesPS understands that every company is different, and each sales challenge is unique.</p>
+
+<p>We help determine where you need support in your sales process, then blueprint and deliver unique solutions to fill the gaps.</p>
+<div class="centered">
+	<a class="btn btn-primary" href="campaign-development.html">Learn More</a>
+</div>
+
+					
+					</div><!--close carousel caption3-->
+			</div><!--close item3-->
+						</div><!--close carousel-inner-->
+	<a href="#showcase" class="left carousel-control" data-slide="prev">&lsaquo;</a><a href="#showcase" class="right carousel-control" data-slide="next">&rsaquo;</a>
+	
+
+ <ol class="carousel-indicators">
+	    <li data-target="#showcase" data-slide-to="0" class="active"></li>
+	    <li data-target="#showcase" data-slide-to="1"></li>
+	    <li data-target="#showcase" data-slide-to="2"></li>
+ </ol>
+
+</section><!--close carousel slide-->
+<div class="centered">
+
+</div>
+	</div><!--end carousel-background-->
+<div class="container-fluid">
+<!--
+<nav class="row-fluid breadcrumbs">
+	<h1 class="hidden">Breadcrumbs</h1>
+	<ul>
+		<li><a class="active-link" href="index.html"><i  class="fa fa-home"></i></a></li> 
+	</ul>
+</nav>
+-->
+
+
+<section class="small-features row-fluid">
+	<article class="span4">
+		<h1>Mission</h1>
+		<img src="img/home-mission-image.png"  alt="our mission"/>
+				<p>SalesPS exists to help our clients solve the most challenge front-end sales issues.  We thrive on taking on the most time-consuming and difficult sales components, allowing our clients to become more efficient by focusing more directly on pipeline activities and revenue generation.</p>
+				
+
+	</article>
+	<article class="span4">
+		<h1>Process</h1>
+		<img src="img/home-process-image.png"  alt="our process"/>
+		<p>Learn more about how we deliver a full-circle solution:</p>
+		
+
+	</article>
+	<article class="span4">
+		<h1>Results</h1>
+		<img src="img/home-results-image.png"  alt="results"/>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		
+		
+
+		
+	</article>
+	
+
+</section><!--close small reatures-->
+
+<section class="row-fluid meet-you">
+	<div class="span4 offset1">
+			<img src="img/elliot-eric.jpg" alt="Sales PS founders">
+	</div><!--end span5-->
+	<div class="span5">
+		<h1>We'd Love to Meet You!</h1>
+		<p>We'd love to learn more about your sales process and where we might be able to add value  &#8212; please feel free to reach out to us and start a conversation!</p>
+		
+		<a class="btn btn-primary" id="contact-us" href="#footer-contact"><i class="fa fa-envelope-o"></i> Contact Us</a>
+	
+	</div><!--end span 7-->
+	
+</section><!--end we'd love to meet you section-->
+
+
+
+</div><!-- end container fluid div-->
+
+<section class="row-fluid" id="footer-contact">
+	<div class="span3">
+		<address> <img src="img/SalesPSLogo(cs5).svg" alt="Sales PS logo">
+				<p>1048 Pearl St<br>Suite L<br>Boulder, CO 80302<br>
+		<abbr title="phone"><i class="fa fa-phone"></i> </abbr>&#40;720&#41;420&ndash;1530
+		</p>
+		</address>
+	</div><!--end span 3, address div-->
+	
+	<div class="span4" id="map_canvas">
+	
+	</div><!--end map canvas-->
+	
+<!--
+	<div class="span5">
+		<form>
+			
+		</form>
+	</div><!--end span5, form-->
+
+
+</section>
+
+
+<footer>
+	<p>Copyright 2013 &copy; <span>Sales PS, LLC.</span> All Rights Reserved</p>
+	<nav>
+	<h1 class="hidden">Footer Navigation</h1>
+	<ul>
+		
+		<li><a href="http://www.salesps.tumblr.com">Blog</a></li>
+		<li><a href="#">About Us</a></li>
+		<li><a href="#">Services</a></li>
+		<li><a class="active-link" href="index.html">Home</a></li>
+		
+	
+	</ul>
+	</nav>
+</footer>
+
+
+
+</body>
+</html>

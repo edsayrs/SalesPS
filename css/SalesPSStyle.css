@@ -1,0 +1,785 @@
+/*
+COLORS:
+
+Navy:  #1a3665;  rgb(26, 54, 101); 
+
+Bright Blue: #00a8cb;
+
+Light Blue: #c0cddb;
+
+Light Grey Background: #e1e4e8;
+
+Grey Body Text: #666666;
+
+Orange: #F1592A; rgb(241, 89, 42);
+
+
+*/
+
+
+*{
+margin:0;
+padding:0;
+}
+html, body{
+	overflow-x:hidden;
+
+}
+
+body{
+	background:white;
+	font-size:12px;
+	
+}
+
+h1, h2, h3, h4, h5, p, a, body{
+	 font-family: "verdana",sans-serif;
+}
+
+
+h1{
+	font-size:25px;
+	font-weight:700;
+	color: #1a3665;
+}
+
+focus{
+	outline:none;
+}
+
+h2{
+font-size:30px;
+font-weight:700;
+color:#1a3665;
+
+	
+}
+
+h3{
+	font-size:25px;
+font-weight:700;
+color:#1a3665;
+
+}
+
+h4{
+font-size:30px;
+font-weight:300;
+color:#1a3665;
+	
+}
+h5{
+	font-size:16px;
+	color:#1a3665;
+	font-weight:500;
+	line-height:16px;	
+}
+h6{
+	font-size:14px;
+	color:#00a8cb;
+	font-weight:300;
+	line-height:14px;
+}
+
+a{
+color:#1a3665;
+}
+ a:hover{
+ text-decoration:none;
+ }
+
+:focus{
+	outline:none;
+}
+
+header{
+}
+
+
+footer{
+	height:65px;
+	width:100%;
+	background-color:#1a3665;
+	font-size:12px;
+/* 	margin-top:25px; */
+}
+
+footer ul{
+	list-style-type: none;
+	margin-right:10%;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+footer p{
+	float:left;
+	display:inline-table;
+	vertical-align: middle;
+	margin-left:10%;
+	padding-top:20px;
+	padding-bottom:15px;
+	color:white;
+	font-weight:300;
+}
+footer p span{
+	color:#00a8cb;
+	font-weight:500;
+}
+
+footer ul li{
+	display:inline-block;
+	vertical-align: middle;
+	float:right;
+	padding:0 10px;
+	
+}
+
+footer ul li a{
+	color:white;
+	font-weight:300;
+	
+}
+footer ul li a:hover, footer ul li a:active{
+	color:#00a8cb;
+	text-decoration: none;
+}
+
+#footer-contact{
+	background-color:#c0cddb;
+	padding:4% 5%;
+}
+
+#eandr-cropped{
+	background-image: url(../img/elliot-eric.jpg);
+	background-size: cover;
+	height:200px;
+	min-width:200px;
+	background-repeat: none;
+	margin-top:3%;
+}
+
+#map_canvas{
+	width:280px;
+	height:240px;
+}
+
+.centered{
+	margin-left: auto;
+	margin-right:auto;
+	text-align:center;
+	float:none;
+	margin-top:10px;
+}
+.bottom{
+	bottom:5px;
+}
+/* container override */
+.container-fluid{
+	padding:0 10% 25px 10%;
+	
+}
+.small-features{
+-webkit-box-shadow: 0 18px 15px -15px grey;
+-moz-box-shadow: 0 18px 15px -15px grey;
+box-shadow: 0 18px 15px -15px grey;
+padding-bottom:40px;
+	
+}
+.small-features p, .small-features img{
+padding:10px;
+}
+
+.meet-you{
+padding-top:40px;
+padding-bottom:21px;
+	
+}
+
+ a.active-link{
+	 color:#00a8cb;
+ }
+ 
+ .side-nav a.active-link::before{
+ 	font-family: "FontAwesome";
+ 	content:"\f00c";
+	 
+ }
+
+.sub-header{
+	background-color:#1a3665;
+	color:#00a8cb;
+	padding:.5% 5%;
+	margin-bottom:25px;
+}
+
+.sub-header h1{
+	font-weight:500;
+	color:#00a8cb;
+}
+
+.breadcrumbs{
+	padding-bottom:25px;
+
+}
+
+.breadcrumbs ul{
+	list-style-type: none;
+	margin: 0 auto;
+	display:inline-block;
+} 
+
+
+.breadcrumbs li {
+display:inline-block;
+margin:-13px;
+
+
+	
+}
+
+.breadcrumbs li a{
+	margin:10px;
+	display:inline-block;
+	position:relative;
+	text-align:center;
+	padding: 8px 30px;
+	/* border-right:2px solid; */
+	background-color:#c0cddb;
+}
+
+
+.breadcrumbs a:link{
+	color:#1a3665;
+}
+
+.breadcrumbs a:hover{
+	color:#00a8cb;
+}
+
+.breadcrumbs.no-hover a:link{
+	color:#1a3665;
+	cursor: default;
+}
+
+a:hover.no-hover{
+
+	color:#1a3665;
+	cursor: default;
+	
+}
+
+
+.breadcrumbs li a::after{ /*trying to make a css triangle..*/
+	content:" ";/*required for before and after elements?*/
+	position:absolute;
+	height:50%;
+ 	width:20px; 
+ 	bottom: 0px;
+	right: -9px;
+ 	background-color:#c0cddb;
+ 	-webkit-transform:skew(-45deg, 0);
+ 	-moz-transform: skew(-45deg, 0);
+	-o-transform: skew(-45deg, 0);
+	-ms-transform: skew(-45deg, 0);
+	transform: skew(-45deg, 0);
+	border-right:2px solid;
+	border-color:transparent;
+}
+
+.breadcrumbs li a::before {/* bottom half of the css triangle*/
+	content: " ";
+	position: absolute;
+	height: 50%;
+	width: 20px;
+	top: 0px;
+	right: -9px;
+	background-color: #c0cddb;
+	-webkit-transform: skew(45deg, 0);
+	-moz-transform: skew(45deg, 0);
+	-o-transform: skew(45deg, 0);
+	-ms-transform: skew(45deg, 0);
+	transform: skew(45deg, 0);
+	border-right:2px solid;
+	border-color:transparent;
+}
+
+/*below I copied the css for the right pinted triangles, thinking I could apply this to the left border inversly, for the n+1 elements, but I don't know how to write that out in temrs of syntax. 
+/*
+
+.breadcrumbs li a::after{ 
+	content:" ";
+	position:absolute;
+	height:50%;
+ 	width:20px; 
+ 	bottom: 0px;
+	right: -9px;
+ 	background-color:#c0cddb;
+ 	-webkit-transform:skew(-45deg, 0);
+ 	-moz-transform: skew(-45deg, 0);
+	-o-transform: skew(-45deg, 0);
+	-ms-transform: skew(-45deg, 0);
+	transform: skew(-45deg, 0);
+	border-right:2px solid;
+	border-color:transparent;
+}
+
+.breadcrumbs li a::before {
+	content: " ";
+	position: absolute;
+	height: 50%;
+	width: 20px;
+	top: 0px;
+	right: -9px;
+	background-color: #c0cddb;
+	-webkit-transform: skew(45deg, 0);
+	-moz-transform: skew(45deg, 0);
+	-o-transform: skew(45deg, 0);
+	-ms-transform: skew(45deg, 0);
+	transform: skew(45deg, 0);
+	border-right:2px solid;
+	border-color:transparent;
+}
+*/
+
+
+/* NOt sure if my code was correct for the nth child code below, tried this to test the concept. 
+#1{
+	z-index:10;
+}
+#2{
+	z-index:9;
+}
+#3{
+	z-index:8;
+}
+*/
+
+/*trying to get the triangles to overlap and show the white border...*/
+/*
+.breadcrumbs li a:nth-child(2n+1){
+	z-index:-1;
+}
+*/
+/* navbar overrides */
+
+
+.thumbnail {
+	display: block;
+	padding: 14px 0;
+	line-height: 20px;
+	border: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	min-height:200px;
+	max-height:200px;
+	min-width:75px;
+	max-width:120px;
+
+}
+
+a.thumbnail:focus, a.thumbnail:hover{
+	outline:none;
+	border:none;
+	box-shadow:none;
+}
+ .thumbnail h5{
+	 margin:10px 0 5px 0;
+ }
+ .thumbnail h6{
+	 margin:4px 0 4px 0;
+ }
+
+button.close{
+	color: #00a8cb;
+	text-shadow:none;
+	opacity: 1;
+}
+.modal{
+	background-color: transparent;
+	
+}
+.modal-header{
+	background-color:#1a3665; 
+	height:25px;
+	border-color:transparent;
+	box-shadow:none;
+	padding:0 10px;
+}
+
+.modal-footer{
+	background-color:#1a3665; 
+	height:10px;
+	margin:0;
+	border-color:transparent;
+	padding:0;
+	box-shadow:none;
+}
+.modal-figure{
+	width:200px;
+	height:100%;
+	float:left;
+	padding:0 15px  0 0;
+}
+ .modal-figcaption{
+ 	position:absolute;
+	bottom:2%;
+	left:215px;
+	line-height:15px;
+	
+ }
+ 
+ .modal-figcaption p{
+	 font-size:11px;
+ }
+ .modal-figcaption h3{
+	 line-height:15px;
+ }
+
+ .modal-figcaption h4{
+	 font-size: 20px;
+	 color:#00a8cb;
+	 line-height:19px;
+ }
+
+.modal-body{
+	padding:0;
+/* 	background-color:#c0cddb; */
+	background-color:white;
+	border-left:10px solid;
+	border-right:10px solid;
+	border-color:#1a3665;
+}
+/*===headshots==*/
+#team1{
+	border-radius:5px;
+	min-height:120px;
+/* 	background-image:url(../img/team/crider.jpg); */
+background-color:black;
+	background-size:cover;
+	background-position: center top;	
+}
+#team2{
+	border-radius:5px;
+	min-height:120px;
+	background-image:url(../img/team/rodstein-el.jpg);
+	background-size:cover;
+	background-position: center top;	
+}
+
+
+#team3{
+	border-radius:5px;
+	min-height:120px;
+	background-image:url(../img/team/gannon.jpg);
+	background-size:cover;
+	background-position: center top;	
+}
+
+#team4{
+	border-radius:5px;
+	min-height:120px;
+	background-image:url(../img/team/colie.jpg);
+	background-size:cover;
+	background-position: center top;	
+}
+
+#team5{
+	border-radius:5px;
+	min-height:120px;
+	background-image:url(../img/team/wright.jpg);
+	background-size:cover;
+	background-position: center top;	
+}
+
+#team6{
+	border-radius:5px;
+	min-height:120px;
+	background-image:url(../img/team/atta.jpg);
+	background-size:cover;
+	background-position: center top;	
+}
+
+#team7{
+	border-radius:5px;
+	min-height:120px;
+	background-image:url(../img/team/tripp.jpg);
+	background-size:cover;
+	background-position: center top;	
+}
+
+#team8{
+	border-radius:5px;
+	min-height:120px;
+	background-image:url(../img/team/crider.jpg);
+	background-size:cover;
+	background-position: center top;	
+}
+
+#team9{
+	border-radius:5px;
+	min-height:120px;
+/* 	background-image:url(../img/team/crider.jpg); */
+background-color:black;
+	background-size:cover;
+	background-position: center top;	
+}
+
+
+
+.navbar{
+	margin-bottom:0;
+	box-shadow: 0px 3px 10px grey;
+	border-radius: 4px;
+
+	
+}
+
+
+
+.navbar-inner {
+  min-height: 40px;
+  padding:0;
+  background-color:  #c0cddb;;
+   border: 1px solid  #c0cddb;;
+/*    background-image:none; */
+   background-image: -moz-linear-gradient(top, #c0cddb, #a5b2c0);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#c0cddb), to(#a5b2c0));
+background-image: -webkit-linear-gradient(top, #c0cddb, #a5b2c0);
+background-image: -o-linear-gradient(top, #c0cddb, #a5b2c0);
+background-image: linear-gradient(to bottom, #c0cddb, #a5b2c0);
+background-repeat: repeat-x;
+
+    }
+
+.navbar .nav > li > a {
+  float: left;
+  padding: 10px 15px 10px;
+  color: #1a3665;
+  text-decoration: none;
+  text-shadow:0 1px 0 #1a3665;
+    margin-left:auto;
+   margin-right:auto;
+   font-size: 14px;
+}
+.navbar .navbar-inner .nav {
+    float: right;
+/*     display:inline-block; */
+    vertical-align: middle;
+    padding-top: 80px;
+    padding-right:10%;
+    
+}
+
+
+.navbar .brand{
+  display: inline-block;
+  vertical-align:middle;
+/*   margin-top: -35px; */
+  float:left;
+  padding: 10px 10% 10px;
+  margin-left: auto;
+  text-shadow:none;
+    
+
+}
+
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+  color: #00a8cb;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+          border-radius: 0;
+}
+
+
+
+
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  color:#00a8cb;
+  text-decoration: none;
+  background-color:  transparent;
+  -webkit-box-shadow: none;
+     -moz-box-shadow:none;
+          box-shadow: none;
+          border-radius: 0;
+}
+.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+color:#00a8cb;
+background-color: transparent;
+}
+
+.dropdown-menu > li > a {
+display: block;
+padding: 3px 20px;
+clear: both;
+font-weight: normal;
+line-height: 20px;
+color:#1a3665;
+white-space: nowrap;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-submenu:hover > a, .dropdown-submenu:focus > a {
+color:#00a8cb;
+text-decoration: none;
+background-color: #c0cddb;
+background-image:none;
+
+}
+
+/*carousel overrides*/
+.carousel{
+	padding:18px 0;
+}
+.carousel-inner {
+position: relative;
+width: 65%;
+height:290px;
+overflow: hidden;
+margin:10px auto;
+background: #1a3665;
+-webkit-box-shadow: 0 18px 15px -15px grey;
+-moz-box-shadow: 0 18px 15px -15px grey;
+box-shadow: 0 18px 15px -15px grey;
+}
+
+.carousel-inner img{
+	width:70%;
+	float:left
+}
+.slider-caption{
+	float:left;
+	width:25%;
+	padding-top:10px;
+	padding-left:2.5%;
+	padding-right:2.5%;
+	padding-bottom:10px;
+	z-index:10;
+	background:#1a3665;
+
+}
+.slider-caption p{
+	color:white;
+	font-weight:200;
+	font-size:12px;
+	line-height:14px;
+	
+}
+.slider-caption h1{
+	font-size:20px;
+	line-height: 25px;
+	color:#00a8cb;
+	text-shadow: 2px 1px 2px black;
+}
+
+.carousel-control.right {
+right: 10%;
+left: auto;
+}
+
+.carousel-control.left {
+left: 10%;
+right: auto;
+}
+
+.carousel-control {
+position: absolute;
+top: 50%;
+left: 15px;
+width: 40px;
+height: 40px;
+margin-top: -20px;
+font-size: 60px;
+font-weight: 100;
+line-height: 30px;
+color: #1a3665;
+text-align: center;
+background:none;
+border:none;
+opacity: 1;
+border-radius: 0;
+}
+
+.carousel-control:hover{
+	color:  #c0cddb;
+}
+#carousel-background{
+	background:#e1e4e8;
+}
+
+.carousel-indicators {
+position:relative;
+z-index: 5;
+left:48%;
+list-style: none;
+text-align: center;
+top:90%;
+
+
+}
+
+.carousel-indicators ol{
+right:50%;
+
+}
+
+.carousel-indicators li {
+display: block;
+float: left;
+width: 7px;
+height: 7px;
+margin-left: 5px;
+text-indent: -999px;
+border-style: solid;
+border-width: 1px;
+border-color: #1a3665;
+border-radius: 10px;
+background-color:transparent;
+}
+.carousel-indicators .active {
+background-color:#1a3665;
+}
+
+.btn-primary {
+color:#ffffff;
+text-shadow: none;
+background-color: #00a8cb;
+background-image: -moz-linear-gradient(top, #71d2e6, #00a8cb);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#71d2e6,), to(#00a8cb));
+background-image: -webkit-linear-gradient(top, #71d2e6, #00a8cb);
+background-image: -o-linear-gradient(top, #71d2e6, #00a8cb);
+background-image: linear-gradient(to bottom, #71d2e6, #00a8cb);
+background-repeat: repeat-x;
+border-color: #0044cc #0044cc #002a80;
+border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
+filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.btn-primary:hover{
+	background-color: #00a8cb;
+}
+
+#contact-us{
+	margin-top:20px;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
+color: #ffffff;
+background-color: #00a8cb;
+}
+
+.btn:focus{
+	outline:none;
+}
+
+@media (max-width: 979px) {
+.nav-collapse {
+    clear: both;
+  }
+}/*end tablet styles*/
+
