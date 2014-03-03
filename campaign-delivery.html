@@ -4,21 +4,47 @@
 <meta charset="UTF-8">
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sales PS Campaign Delivery</title>
+<title>Sales PS - Campaign Delivery</title>
 
 <!-- bootstrap-->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 	<link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.js"></script>
 	
-
+	<script type="text/javascript"> $(document).ready(function(){
+	$('.carousel').carousel({ interval:5000, cycle:true})
+	});
+	</script>
+	
+<!--google maps-->
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script>
+      function initialize() {
+        var map_canvas = document.getElementById('map_canvas');
+        var map_options = {
+          center: new google.maps.LatLng(40.017936,-105.28175),
+          zoom:15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(map_canvas, map_options);
+    var i=new google.maps.Marker({
+        position:new google.maps.LatLng(40.017936,-105.28175),
+        map:map // <------------------ needs to be a google.maps.Map object
+        
+        })
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    
 <!-- typekit-->
 <script type="text/javascript" src="//use.typekit.net/aqt1zwa.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 <!--font awesome-->
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+
 
 <!--my CSS-->
 <link rel="stylesheet" href="css/SalesPSStyle.css" type="text/css">
@@ -32,7 +58,6 @@
 	
 		<!-- !nav section-->	
 		<nav class="navbar">
-			<h1 class="hidden">Main Navigation</h1>
 			<div class="navbar-inner">
 			<!--codein a tags below is used to dislay the icon that shows that there is more to show in the nav bar, responsive in smaller windows-->
 			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -40,17 +65,17 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</a>
-				<a class="brand" href="index.html"><img src="img/SalesPSLogo.svg" alt="Sales PS logo"></a>
-									<ul class="nav nav-collapse collapse"><!--nav-collapse and collapse triggers built in javaScript for responsive nav bar-->
+				<a class="brand" href="index.html"><img src="img/spsLogoFINAL-outlines.svg" alt="Sales PS logo"></a>	
+					<ul class="nav nav-collapse collapse"><!--nav-collapse and collapse triggers built in javaScript for responsive nav bar-->
 						<li><a href="index.html">Home</a></li>
-						<li class="dropdown active">
-							<a  href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<li class="active" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 							Services
 							</a>
-							<ul class="dropdown-menu">								
+							<ul class="dropdown-menu">	
+								<li><a href="services.html">Services</a></li>							
 								<li><a href="campaign-development.html">Campaign Development</a></li>
-								<li><a href="lead-generation.html">Lead Generation</a></li>
-								<li><a href="appointment-setting.html">Appointment Setting</a></li>
+								<li><a class="active-link" href="campaign-delivery.html">Campaign Delivery</a></li>
 								<li><a href="salesforce.html">Salesforce.com</a></li>
 
 
@@ -63,8 +88,9 @@
 							About Us
 							</a>
 							<ul class="dropdown-menu">								
-								<li><a href="methodology.html">Methodology</a></li>
+								<li><a href="about-us.html">About Us</a></li>
 								<li><a href="meet-the-team.html">Meet The Team</a></li>
+								<li><a href="client-testimonials.html">Client Testimonials</a></li>
 								<li><a href="contact.html">Contact Us</a></li>
 <!-- 								<li><a href="careers.html">Careers</a></li> -->
 
@@ -78,8 +104,7 @@
 				
 			</div><!--end navbar-inner div-->
 		</nav>
-	</header>
-	
+	</header>	
 	<section class="sub-header">
 		<h1>Services</h1>
 	</section>
@@ -164,19 +189,25 @@
 	</div><!--end container-fluid-->
 
 <footer>
-	<p>Copyright 2013 &copy; <span>Sales PS, LLC.</span> All Rights Reserved</p>
+	<p class="antipasto">Copyright 2014 &copy; <span>Sales PS, LLC.</span> All Rights Reserved</p>
 	<nav>
 	<h1 class="hidden">Footer Navigation</h1>
 	<ul>
 		
 		<li><a href="http://www.salesps.tumblr.com">Blog</a></li>
-		<li><a href="#">About Us</a></li>
-		<li><a class="active-link" href="#">Services</a></li>
+		<li><a href="about-us.html">About Us</a></li>
+		<li><a class="active-link" href="services.html">Services</a></li>
 		<li><a href="index.html">Home</a></li>
 		
 	
 	</ul>
 	</nav>
 </footer>
-</body>
+
+
+
+	<!-- full-screen carousel override -->
+	<script src="js/jquery.carousel.fullscreen.js"></script>
+	<!--my js-->
+	<script src="js/salesps.js"></script></body>
 </html>

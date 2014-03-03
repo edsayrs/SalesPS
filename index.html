@@ -36,6 +36,7 @@
       }
       google.maps.event.addDomListener(window, 'load', initialize);
     </script>
+    
 <!-- typekit-->
 <script type="text/javascript" src="//use.typekit.net/aqt1zwa.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -106,13 +107,13 @@
 	</header>
 
 	
-	<div id="carousel-background">
+
 	<section class="carousel slide" id="showcase">
 			<h1 class="hidden">slider section</h1>
 	<div class="carousel-inner">
 		<div class="item active">
 			<h1 class="hidden">who we are</h1>
-			<img src="img/Slider1.jpg" alt="who we are">
+			<img src="img/slider1-new-logo3.jpg" alt="who we are">
 					<div class="slider-caption">
 					<h1>Who We Are</h1>
 					<p>The key to driving higher and more predictable sales revenue is having a scalable, repeatable sales process.</p>
@@ -154,22 +155,28 @@
 					
 					</div><!--close carousel caption3-->
 			</div><!--close item3-->
-						</div><!--close carousel-inner-->
-	<a href="#showcase" class="left carousel-control" data-slide="prev">&lsaquo;</a><a href="#showcase" class="right carousel-control" data-slide="next">&rsaquo;</a>
-	
+										 						</div><!--close carousel-inner-->
+										 						
+										 						
+<div class="arrow">
+<a href="#small-features"><h1><i class="fa fa-chevron-down fa-lg"></i></h1></a>
+</div><!--end arrow-down-->
 
- <ol class="carousel-indicators">
+			 		
+	<a href="#showcase" class="left carousel-control" data-slide="prev">&lsaquo;</a><a href="#showcase" class="right carousel-control" data-slide="next">&rsaquo;</a>
+	<ol class="carousel-indicators">
 	    <li data-target="#showcase" data-slide-to="0" class="active"></li>
 	    <li data-target="#showcase" data-slide-to="1"></li>
 	    <li data-target="#showcase" data-slide-to="2"></li>
  </ol>
 
-</section><!--close carousel slide-->
-<div class="centered">
 
-</div>
-	</div><!--end carousel-background-->
-<div class="container-fluid">
+
+
+</section><!--close carousel slide-->
+
+
+<div class="container-fluid" id="navy">
 <!--
 <nav class="row-fluid breadcrumbs">
 	<h1 class="hidden">Breadcrumbs</h1>
@@ -180,43 +187,51 @@
 -->
 
 
-<section class="small-features row-fluid">
-	<article class="span4">
-		<h1>Mission</h1>
-		<img src="img/home-mission-image.png"  alt="our mission"/>
+<section class="small-features row-fluid" id="small-features">
+
+	<article class="span4 columns" id="c-one">
+<!-- 		<h1 class="centered">Mission</h1> -->
+		<h2 class="centered"><i class="fa fa-rocket fa-4x"></i></h2>
+		<h1 class="centered">Mission</h1>
 				<p>SalesPS exists to help our clients solve the most challenging front-end sales issues.  We thrive on tackling the most time-consuming and difficult sales components, allowing our clients to become more efficient by focusing more directly on pipeline activities and revenue generation. </p>
 				
-
-	</article>
-	<article class="span4">
-		<h1>Methodology</h1>
-		<a href="about-us.html"> <img src="img/home-process-image.png"  alt="our process"></a>
-		<p>You have a sales strategy, but know you need help with execution. Our end-to-end methodology allows us to deliver flexible solutions to meet your needs and to hit your goals. Learn more about how we can apply our proven process to meet your specific objective</p>
-		
-
-	</article>
-	<article class="span4">
-		<h1>Results</h1>
-		<a href="client-testimonials.html"><img src="img/home-results-image.png"  alt="results"></a>
-		<p>We are proud to be in the trenches, battling to uncover new opportunities for our clients. There’s a reason we’ve grown organically: our clients can’t stop talking about us!</p>
-		
-		
-
-		
 	</article>
 	
+	
+	
+	<article class="span4 columns" id="c-two">
+	<a href="about-us.html"><h2 class="centered"><i class="fa fa-flask fa-4x"></i></h2></a>
+		<h1 class="centered">Methodology</h1>
+		<p>You have a sales strategy, but know you need help with execution. Our end-to-end methodology allows us to deliver flexible solutions to meet your needs and to hit your goals. Learn more about how we can apply our proven process to meet your specific objective</p>
+		
+	</article>
+
+
+	
+	<article class="span4 columns" id="c-three">
+	<a href="client-testimonials.html"><h2 class="centered"><i class="fa fa-check-square-o fa-4x"></i></h2></a>
+		<h1 class="centered">Results</h1>
+		
+		<p>We are proud to be in the trenches, battling to uncover new opportunities for our clients. There’s a reason we’ve grown organically: our clients can’t stop talking about us!</p>
+			
+	</article>
+
 
 </section><!--close small reatures-->
-
-<section class="row-fluid meet-you">
-	<div class="span4 offset1">
-			<img src="img/elliot-eric.jpg" alt="Sales PS founders">
+	<div class="arrow">
+<a href="#meet-you"><h1><i class="fa fa-chevron-down fa-lg"></i></h1></a>
+</div><!--end arrow-down-->
+</div><!--end container-fluid navy-->
+<div class="container-fluid" id="bright-blue">
+<section class="row-fluid meet-you" id="meet-you">
+	<div class="span5">
+			<img src="img/meet-you.jpg" alt="Sales PS founders">
 	</div><!--end span5-->
 	<div class="span5">
 		<h1>We'd Love to Meet You!</h1>
 		<p>We'd love to learn more about your sales process and where we might be able to add value  &#8212; please feel free to reach out to us and start a conversation!</p>
 		
-		<a class="btn btn-primary" id="contact-us" href="#footer-contact"><i class="fa fa-envelope-o"></i> Contact Us</a>
+		<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#footer-contact"><i class="fa fa-envelope-o"></i> Contact Us</button>
 	
 	</div><!--end span 7-->
 	
@@ -226,39 +241,101 @@
 
 </div><!-- end container fluid div-->
 
-<section class="row-fluid" id="footer-contact">
-	<div class="span3">
-		<address> <img src="img/spsLogoFINAL-outlines.svg" alt="Sales PS logo">
-				<p>1048 Pearl St<br>Suite L<br>Boulder, CO 80302<br>
-		<abbr title="phone"><i class="fa fa-phone"></i> </abbr>&#40;720&#41;420&ndash;1550
-		</p>
-		</address>
-	</div><!--end span 3, address div-->
+	<section id="footer-contact" class="collapse out">
+		<section class="row-fluid">
+			<div class="span6">
+				<address> <img src="img/spsLogoFINAL-outlines.svg" alt="Sales PS logo">
+					<p>1048 Pearl St<br>Suite L<br>Boulder, CO 80302<br>
+			<abbr title="phone"><i class="fa fa-phone"></i> </abbr>&#40;720&#41;420&ndash;1550
+					</p>
+					</address>
+			</div><!--end span 6, address div-->
+		
+		<div class="span6" id="map_canvas">
+		
+		</div><!--end map canvas-->
+		
+	</section><!--end row fluid-->
+
+<section class="row-fluid">	
+<h3>Contact Us</h3>
 	
-	<div class="span4" id="map_canvas">
-	
-	</div><!--end map canvas-->
-	
-<!--
-	<div class="span5">
-		<form>
+	<div class="span12 sf-form"> <!--generated code for Salesforce form-->
+	<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+	<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8"/>
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <FORM> element to your page.             -->
+<!--  ----------------------------------------------------------------------  -->
+
+		<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+			<input type=hidden name="oid" value="00D80000000aPKj">
+			<input type=hidden name="retURL" value="http://emilysayrs.com/salesPS">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+<!--  these lines if you wish to test in debug mode.                          -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail" value="eric@salesps.com">        -->
+<!--  ----------------------------------------------------------------------  -->
+			<fieldset class="span3">
+				<label for="first_name">First Name</label>
+				<input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
 			
+	
+				<label for="last_name">Last Name</label>
+				<input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+
+				<label for="title">Title</label>
+				<input  id="title" maxlength="40" name="title" size="20" type="text" /><br>
+			</fieldset>
+			<fieldset class="span3">
+
+				<label for="company">Company</label>
+				<input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
+
+
+				<label for="phone">Phone</label>
+				<input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+
+				<label for="email">Email</label>
+				<input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+			</fieldset>
+
+<!--
+<label for="city">City</label><input  id="city" maxlength="40" name="city" size="20" type="text" /><br>
+
+<label for="state">State/Province</label><input  id="state" maxlength="20" name="state" size="20" type="text" /><br>
+-->
+<fieldset class="span4">
+
+				<label for="description">Message</label>
+				<textarea id="description" name="description" type="text"></textarea><br>
+
+				<input class="btn btn-primary" type="submit" name="submit">
+</fieldset>
+
 		</form>
-	</div><!--end span5, form-->
-
-
-</section>
+	</div><!--end form div-->
+</section><!--end row-fluid-->
+</section><!--end footer-contact-->
 
 
 <footer>
-	<p>Copyright 2014 &copy; <span>Sales PS, LLC.</span> All Rights Reserved</p>
+	<p class="antipasto">Copyright 2014 &copy; <span>Sales PS, LLC.</span> All Rights Reserved</p>
 	<nav>
 	<h1 class="hidden">Footer Navigation</h1>
 	<ul>
 		
 		<li><a href="http://www.salesps.tumblr.com">Blog</a></li>
-		<li><a href="#">About Us</a></li>
-		<li><a href="#">Services</a></li>
+		<li><a href="about-us.html">About Us</a></li>
+		<li><a href="services.html">Services</a></li>
 		<li><a class="active-link" href="index.html">Home</a></li>
 		
 	
@@ -268,8 +345,10 @@
 
 
 
-	<!-- Just include this Js file -->
+	<!-- full-screen carousel override -->
 	<script src="js/jquery.carousel.fullscreen.js"></script>
+	<!--my js-->
+	<script src="js/salesps.js"></script>
 
 </body>
 </html>

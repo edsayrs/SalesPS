@@ -7,13 +7,14 @@ jQuery(document).ready(function() {
 
 	$('.carousel').carousel({
     	pause: false,
-    	interval: 4000
+    	interval: 5000
     	
 	});
 	
+		
+	
 	var totalHeight = $(window).outerHeight();
 	totalHeight = totalHeight - 120;
-
 
 
 	$('.carousel').css({'margin': 0, 'width': $(window).outerWidth(), 'height':totalHeight});
@@ -23,8 +24,10 @@ jQuery(document).ready(function() {
 		$(this).parent().css({'background': 'url('+imgSrc+') center center no-repeat', '-webkit-background-size': '100%', '-moz-background-size': '100%', '-o-background-size': '100%', 'background-size': '100%', '-webkit-background-size': 'cover', '-moz-background-size': 'cover', '-o-background-size': 'cover', 'background-size': 'cover'});
 		$(this).remove();
 	});
+	
 
 	$(window).on('resize', function() {
 		$('.carousel').css({'width': $(window).outerWidth(), 'max-height': totalHeight});
 	});
+
 }); 
